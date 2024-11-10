@@ -10,7 +10,8 @@ export class AppService {
     const division = Number(number1) / Number(number2);
 
     return division;
-
+  }
+  
   findSum(num1:number, num2:number):number{
     return Number(num1)+ Number(num2);
   }

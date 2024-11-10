@@ -17,7 +17,8 @@ export class AppController {
     const division = this.appService.divideNumbers(number1, number2);
 
     return { division };
-
+  }
+  
   @Post('/sum')
   getTotalsum(@Body('num1') number1:number , @Body('num2') number2: number){
     const total = this.appService.findSum(number1,number2);
