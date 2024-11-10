@@ -24,4 +24,10 @@ export class AppController {
     const total = this.appService.findSum(number1,number2);
     return {total : total};
   }
+  @Post('/subtract')
+  getTotalsub(@Body('num1') number1:number , @Body('num2') number2: number){
+    const total = this.appService.findSubtract(number1,number2);
+    return {total : total};
+  }
+
 }
