@@ -5,4 +5,10 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
+
+  divideNumbers(number1: number, number2: number): number {
+    const division = Number(number1) / Number(number2);
+
+    return division;
+  }
 }
